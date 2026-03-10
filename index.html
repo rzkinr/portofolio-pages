@@ -3,22 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portofolio Rizki - Web developer yang fokus pada UI modern, performa, dan pengalaman pengguna." />
     <title>Portofolio - Rizki</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Portofolio - Rizki</h1>
-    <img src="img.jpg" alt="Foto Profil" />
-    <p>
-      Selamat datang di portofolio saya! Di sini Anda dapat melihat beberapa
-      proyek yang telah saya kerjakan.
-    </p>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home">Rizki</a>
+        <nav class="nav-links" aria-label="Navigasi utama">
+          <a href="#about">Tentang</a>
+          <a href="#skills">Skill</a>
+          <a href="#projects">Proyek</a>
+          <a href="#contact">Kontak</a>
+        </nav>
+      </div>
+    </header>
 
-    <h2>Proyek 1: Aplikasi To-Do List</h2>
-    <p>
-      Aplikasi ini memungkinkan pengguna untuk membuat daftar tugas harian
-      mereka. Fitur utama termasuk menambahkan, mengedit, dan menghapus tugas,
-      serta menandai tugas yang sudah selesai.
-    </p>
+    <main id="home">
+      <section class="hero container">
+        <div class="hero-content">
+          <p class="eyebrow">Web Developer</p>
+          <h1>Hai, saya Rizki. Saya membangun website yang cepat dan rapi.</h1>
+          <p>
+            Selamat datang di portofolio saya. Saya fokus pada website
+            fungsional, pengalaman pengguna yang nyaman, dan kode yang mudah
+            dikembangkan.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Lihat Proyek</a>
+            <a class="btn btn-secondary" href="#contact">Hubungi Saya</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="img.jpg" alt="Foto Profil Rizki" />
+        </div>
+      </section>
+
+      <section class="container section" id="about">
+        <h2>Tentang Saya</h2>
+        <p>
+          Saya senang mengembangkan aplikasi web dari ide awal hingga siap
+          digunakan. Saya terbiasa bekerja dengan HTML, CSS, JavaScript, dan
+          terus belajar teknologi modern untuk meningkatkan kualitas produk.
+        </p>
+      </section>
+
+      <section class="container section" id="skills">
+        <h2>Skill Utama</h2>
+        <div class="chip-list">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Responsive Design</span>
+          <span class="chip">Git & GitHub</span>
+          <span class="chip">UI/UX Dasar</span>
+        </div>
+      </section>
+
+      <section class="container section" id="projects">
+        <h2>Proyek</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Aplikasi To-Do List</h3>
+            <p>
+              Membantu pengguna mengelola tugas harian dengan fitur tambah,
+              edit, hapus, dan status selesai.
+            </p>
+            <a href="#" aria-label="Lihat detail proyek To-Do List"
+              >Lihat Detail</a
+            >
+          </article>
+
+          <article class="project-card">
+            <h3>Landing Page UMKM</h3>
+            <p>
+              Halaman promosi produk UMKM dengan fokus pada tampilan mobile, CTA
+              jelas, dan performa cepat.
+            </p>
+            <a href="#" aria-label="Lihat detail proyek Landing Page UMKM"
+              >Lihat Detail</a
+            >
+          </article>
+
+          <article class="project-card">
+            <h3>Dashboard Penjualan</h3>
+            <p>
+              Dashboard sederhana untuk menampilkan ringkasan data penjualan
+              harian dan bulanan secara visual.
+            </p>
+            <a href="#" aria-label="Lihat detail proyek Dashboard Penjualan"
+              >Lihat Detail</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="container section" id="contact">
+        <h2>Kontak</h2>
+        <p class="contact-intro">
+          Tertarik bekerja sama? Silakan hubungi saya lewat tombol cepat atau
+          kirim pesan lewat form di bawah.
+        </p>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:rizki@example.com"
+            >Email Saya</a
+          >
+          <a class="btn btn-secondary" href="https://wa.me/6281234567890"
+            >WhatsApp</a
+          >
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <label for="name">Nama</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Rizki. Dibuat dengan semangat belajar.</p>
+      </div>
+    </footer>
   </body>
 </html>
